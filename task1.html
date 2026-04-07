@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+    
+        .course-table{
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            background: white;
+        }
+    
+        
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            min-width: 400px;
+        }
+    
+    
+        .styled-table thead tr {
+            background-color: #f8fafc;
+            border-bottom: 3px solid #cbddf4;
+        }
+    
+        .styled-table th {
+            text-align: left;
+            padding: 14px 16px;
+            font-weight: 600;
+            color: #1e293b;
+            letter-spacing: 0.3px;
+        }
+    
+        
+        .styled-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #a5b2be;
+            color: #0f172a;
+        }
+    
+        .styled-table tbody tr:hover {
+            background-color: #f1f5f9;
+            transition: 0.2s ease;
+        }
+    
+        
+        .styled-table td:nth-child(3) {
+            font-weight: 500;
+            color: #0f3b5c;
+        }
+    
+        
+        .styled-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+    
+    
+        .styled-table th:first-child {
+            border-top-left-radius: 12px;
+        }
+    
+        .styled-table th:last-child {
+            border-top-right-radius: 12px;
+        }
+        #bottom-page{
+            width: 600px; 
+            height:300px; 
+            border-radius:3px; 
+            margin-left: 30px;
+             margin-top:20px;
+                
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <h1>MUSA</h1>
+    <p>I am <b>Musa</b>, a dedicated <b><i>second-year ECE student</i></b> with a primary focus on <b>coding</b> and
+        technology. <br>I am constantly seeking to sharpen my <b>programming skills</b> and apply <i>logical problem-solving<br></i>
+        to create efficient, <i>impactful software</i> for the modern world.</p>
+        <img src="peace.jpg" alt="PEACE HAS NO ALTERNATIVE" width="300" height="400" style="margin-top: 30px; margin-left: 30px; border-radius: 4px;">
+        <div style="margin-left: 30px;">
+        <p style="color: rgb(143, 42, 42); font-weight: bold;">My skills</p>
+        <ul>
+            <li>python</li>
+            <li>javascript</li>
+            <li>c++</li>
+            <li>react</li>
+        </ul>
+        <p style="color: aqua; margin-left: 30px; font-weight: bold;">My hobbies</p>
+        <ul>
+            <li>reciting the quran</li>
+            <li>watching historical movies</li>
+            <li>going for zihra</li>
+            </ul>
+            <p style="color: rgb(94, 255, 0); font-weight: bold;">My interests</p>
+            <ul >
+                <li>coding</li>
+                <li>playing soccer</li>
+                <li>helping others</li>
+            </ul>
+            <p style="color: blue; margin-left: 30px; font-weight: bold;">My courses</p>
+            <ol list-style-type="roman">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python etc.</li> 
+        </ol>
+        <p id="table">Table for my courses</p>
+            <div class="course-table">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Credits Hours</th>
+                            <th>Grades</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cours1</td>
+                            <td>3</td>
+                            <td>B+</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>course2</td>
+                            <td>3</td>
+                            <td>B</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>course3</td>
+                            <td>4</td>
+                            <td>C+</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>course4</td>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>course5</td>
+                            <td>3</td>
+                            <td>F</td>
+                            <td>Failed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+</body>
+</html>
+                    </tbody>
+                </table>
+            </div>
+            <form action=""  style="margin-left: 30px;">
+                <fieldset style="width: 300px;background-color: rgb(224, 204, 204);border:none;border-radius:10px;">
+            
+                    <h3 style="color: rgb(97, 97, 226);margin-top:5px;">fill out the form</h3>
+            
+                    <label style="margin-top: 10px; color:rgb(181, 179, 176)" for="Name">Name:</label><br>
+                    <input style="width:300px;height:20px;" type="text" placeholder="Enter your name"><br>
+                    <label for="Email" style="color:rgb(181, 179, 176);padding-top:16px;">Email:</label>
+                    <input style="width:300px;height:20px;" type="text" placeholder="Enter your email"><br><br>
+                    <label for="Message">Your Message:</label><br>
+                    <textarea name="Message" placeholder="text here"></textarea><br><br>
+
+                    <button
+                        style="width:60px;background-color:rgb(12, 141, 240);border-radius:5px;border:none;color:white;height:25px;padding-top:5px;padding-bottom: 5px; cursor: pointer;">Submit</button>
+            
+    
+            
+            
+                </fieldset>
+            </form>
+            <p>
+                learn more at <a href="https://www.w3schools.com/html/" target="_blank" >W3schools</a>
+            </p>
+            <a href="#table">jumper link</a>
+            <p>
+                <a href="https://www.linkedin.com/in/musa-abdusamed-aa9365350" target="_blank"> 
+                    <img src="finger.png" alt="clickable image" width="100px;" height="70px;">
+                </a>
+            </p>
+
+            <div id="bottom-page">
+                
+                
+                
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/mU6anWqZJcc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                
+                
+            </div>
+            </div>
+            
+</body>
+</html>
